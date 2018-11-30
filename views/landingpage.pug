@@ -1,0 +1,23 @@
+head
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+	link(rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css")
+	script(src="/bootstrap/dist/js/bootstrap.min.js")
+	script(src="/jquery/dist/jquery.min.js")
+
+	link(rel="stylesheet" type="text/css" href="css/styles.css")
+	link(href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Noto+Sans+SC" rel="stylesheet")
+	script(type="text/javascript" src='js/landingpage.js')
+	title PizzaLabs
+
+body(style="background-color: black;")
+	header
+	div.overlay
+	div.container
+		div.description
+			h1 PizzaLabs
+				p Build your own pizza.
+				form(method="get" action="/cart")
+					input(type="submit" class="btn btn-outline-secondary btn-lg" id="startbtn" value="Start")
+
