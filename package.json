@@ -1,0 +1,12 @@
+{
+  "name": "pizzalabs",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "A web-application for taking in and managing orders for the company PizzaLabs.",
+  "author": "Aaron Bautista",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
