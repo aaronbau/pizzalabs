@@ -1,0 +1,30 @@
+head
+	meta(charset="utf-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+
+	link(rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css")
+	script(src="/bootstrap/dist/js/bootstrap.min.js")
+	script(src="/jquery/dist/jquery.min.js")
+
+	link(rel="stylesheet" type="text/css" href="css/styles.css")
+	link(href="https://fonts.googleapis.com/css?family=Montserrat:400,800|Noto+Sans+SC" rel="stylesheet")
+	script(type="text/javascript" src='js/landingpage.js')
+
+	title PizzaLabs
+
+body
+	nav.navbar.navbar-dark.bg-dark.sticky-top.navbar-expand-lg
+			a.navbar-brand(style="color: white;" href="/") PizzaLabs
+	
+	div
+		form(method="post")
+			div.form-group
+				label(for="email") Email Address
+				input.form-control.form-control-sm#email(type="email" name="email" placeholder="Email address")
+			div.form-group
+				label(for="username") Username
+				input.form-control.form-control-sm#username(type="text" name="username" placeholder="Username")
+			div.form-group
+				label(for="password") Password
+				input.form-control.form-control-sm#password(type="password" name="password" placeholder="Password")
+			input.btn.btn-primary.btn-sm(type="submit" value="Register" form-action="/api/accounts")

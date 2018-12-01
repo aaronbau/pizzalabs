@@ -12,6 +12,11 @@ head
 	title PizzaLabs
 
 body(style="background-color: black;")
+	nav.navbar.navbar-dark.bg-dark.sticky-top.navbar-expand-lg
+		a.navbar-brand(style="color: white;" href="/") PizzaLabs
+		form.form-inline.my-2.my-lg-0.col-xs-3
+			button.btn.btn-outline-success.my-2.my-sm-0(style="margin-right: 5px;" method="get" formaction="/login") Log In
+			button.btn.btn-secondary.my-2.my-sm-0(method="get" formaction="/register") Sign Up
 	header
 	div.overlay
 	div.container
@@ -20,4 +25,3 @@ body(style="background-color: black;")
 				p Build your own pizza.
 				form(method="get" action="/cart")
 					input(type="submit" class="btn btn-outline-secondary btn-lg" id="startbtn" value="Start")
-
